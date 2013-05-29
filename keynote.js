@@ -39,6 +39,8 @@
       );
       console.log('%c' + aside.textContent, 'font-size: 14px;' + aside.style.cssText);
     }
+
+    document.location.hash = '#' + page;
   };
 
   document.onkeydown = function (evt) {
@@ -50,6 +52,7 @@
     }
   };
 
-  goToPage(0);
+  var page = document.location.hash ? document.location.hash.substr(1) : 0;
+  goToPage(page);
 
 })();

@@ -79,6 +79,10 @@ body .gist .gist-file .gist-data {
   font-size: 1rem;
 }
 
+.icon-github:link, .icon-github:visited {
+  color: #666;
+}
+
 a.btn {
   background-color: #ffea6f;
   padding: 0.35rem;

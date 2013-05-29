@@ -53,6 +53,6 @@
   };
 
   var page = document.location.hash ? document.location.hash.substr(1) : 0;
-  goToPage(page);
+  goToPage(parseInt(page, 10));
 
 })();

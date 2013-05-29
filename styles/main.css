@@ -8,39 +8,37 @@ html {
   font-family: 'Source Sans Pro', Arial;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
   color: #fff;
-  font-size: 4rem;
-  line-height: 1.4em;
+  font-size: 5vmin;
+  line-height: 7vmin;
 }
 
-html, body, section {
+html, body {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
 body {
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
 }
 
 section {
   display: none;
-  vertical-align: middle;
-  margin: 0 auto;
 }
 
 section.active {
-  display: table-cell;
+  display: block;
 }
 
 section aside {
   display: none;
-}
-
-.center {
-  margin: 0 auto;
-  text-align: center;
 }
 
 a:link, a:visited {
@@ -54,7 +52,7 @@ a:link, a:visited {
   line-height: 1.4em;
   text-align: left;
   text-shadow: none;
-  width: 90%;
+  width: 90vmin;
   margin: 0 auto;
   position: relative;
 }
@@ -81,44 +79,4 @@ body .gist .gist-file .gist-data {
 
 .icon-github:link, .icon-github:visited {
   color: #666;
-}
-
-a.btn {
-  background-color: #ffea6f;
-  padding: 0.35rem;
-  text-decoration: none;
-  color: black;
-  text-shadow: 0px 1px 3px #fff;
-  border-radius: 0.2rem;
-  font-weight: bold;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.2s;
-}
-
-a.btn:hover {
-  background-color: #fff788;
-}
-
-@media all and (max-width: 1000px) {
-  html {
-    font-size: 3rem;
-  }
-
-  body {
-    display: block;
-  }
-
-  section.active {
-    display: block;
-  }
-}
-
-@media all and (max-width: 800px) {
-  font-size: 2rem;
-}
-
-@media all and (max-width: 500px) {
-  html {
-    font-size: 1.5rem;
-  }
 }

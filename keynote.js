@@ -12,9 +12,11 @@
       scriptTag = scriptTag.previousSibling;
     }
 
-    octoLogo.classList.add('gist-logo');
-    octoLogo.innerHTML = '<a class="icon-github" href="' + scriptTag.src.replace('.js', '') + '"></a>';
-    el.appendChild(octoLogo);
+    if (scriptTag) {
+      octoLogo.classList.add('gist-logo');
+      octoLogo.innerHTML = '<a class="icon-github" href="' + scriptTag.src.replace('.js', '') + '"></a>';
+      el.appendChild(octoLogo);
+    }
   });
 
   var goToPage = function(page) {
